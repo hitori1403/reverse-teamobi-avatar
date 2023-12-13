@@ -1,0 +1,2 @@
+public interface i6 {
+}
