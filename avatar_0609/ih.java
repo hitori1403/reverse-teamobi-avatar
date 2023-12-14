@@ -47,7 +47,7 @@ public final class ih {
 
       String[] var3 = a;
       new StringBuffer(var3[0]).append((int)var0).append(var3[2]).append(AutoController.I);
-      if (hu.b().f != null) {
+      if (DeCaptcha.b().f != null) {
          switch(var0) {
             case 3:
                h3.b();
@@ -115,7 +115,7 @@ public final class ih {
                   h5.d = new h5();
                }
 
-               hu.b().f = h5.d;
+               DeCaptcha.b().f = h5.d;
                if (f8.n == -1) {
                   h2 var4;
                   (var4 = h2.b()).a((byte)51);
@@ -143,7 +143,7 @@ public final class ih {
                   hl.b = new hl();
                }
 
-               hu.b().f = hl.b;
+               DeCaptcha.b().f = hl.b;
                hx var1 = hx.b();
                k4.i();
                var1.a((byte)1);

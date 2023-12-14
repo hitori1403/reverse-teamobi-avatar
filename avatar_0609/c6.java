@@ -2,6 +2,7 @@ public final class c6 {
    private byte[] b;
    private byte[] c;
    private static final String[] a;
+   // [UTF-8, UTF-8]
 
    public c6(String var1) {
       this.b = var1.getBytes();

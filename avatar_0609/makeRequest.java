@@ -8,14 +8,14 @@ import javax.microedition.io.HttpConnection;
 // ha.java
 public final class makeRequest implements Runnable {
    private String url;
-   private Handler handler;
+   private ResponseHandler responseHandler;
    private String body;
    private String msgType;
    private static final String[] a;
    // [Connection, HTTP Error: , Content-Type, application/json; charset=utf-8, keep-alive, msgType, Content-length, POST]
 
-   public makeRequest(String body, String url, String msgType, Handler handler) {
-      this.handler = handler;
+   public makeRequest(String body, String url, String msgType, ResponseHandler responseHandler) {
+      this.responseHandler = responseHandler;
       this.body = body;
       this.url = url;
       this.msgType = msgType;
@@ -40,7 +40,7 @@ public final class makeRequest implements Runnable {
          var1 = var6;
          (var2 = var6.openDataOutputStream()).write(this.body.getBytes());
          if (var6.getResponseCode() != 200) {
-            Handler var17 = this.handler;
+            ResponseHandler var17 = this.responseHandler;
             new StringBuffer(a[1]).append(var6.getResponseCode());
             var17.handle();
          } else {
@@ -54,12 +54,12 @@ public final class makeRequest implements Runnable {
 
             String responseText1 = new String(responseText.toByteArray());
             b(responseText);
-            this.handler.handle(responseText1);
+            this.responseHandler.handle(responseText1);
          }
 
          return;
       } catch (Exception var10) {
-         Handler var10000 = this.handler;
+         ResponseHandler var10000 = this.responseHandler;
          var10.getMessage();
          var10000.handle();
       } finally {

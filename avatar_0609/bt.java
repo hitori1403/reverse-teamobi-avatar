@@ -1,7 +1,7 @@
 final class bt implements gq {
-   private hu b;
+   private DeCaptcha b;
 
-   bt(hu var1) {
+   bt(DeCaptcha var1) {
       this.b = var1;
    }
 

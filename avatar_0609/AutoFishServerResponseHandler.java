@@ -1,10 +1,10 @@
-final class HandleAutoFishServerResponse implements Handler {
+final class AutoFishServerResponseHandler implements ResponseHandler {
    private AutoController b;
    private final long c;
    private static final String[] a;
    // [_getFishing, message, Có lỗi xảy ra!, time, Kết nối thất bại hãy kiểm tra lại internet, color, message, status]
 
-   HandleAutoFishServerResponse(AutoController var1, long currentTime) {
+   AutoFishServerResponseHandler(AutoController var1, long currentTime) {
       this.b = var1;
       this.c = currentTime;
    }

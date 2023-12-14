@@ -1,6 +1,6 @@
 import java.util.Hashtable;
 
-final class eg implements Handler {
+final class eg implements ResponseHandler {
    private final long b;
    private static final String[] a;
 

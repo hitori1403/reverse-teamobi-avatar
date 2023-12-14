@@ -737,7 +737,7 @@ public final class AutoController extends e8 implements c4 {
                var10.m = var10.b;
                var10.U = var10.s;
                var10.i();
-               if (var10.f != GameMidlet.k.f && !hu.g.contains(var10.g.toLowerCase())) {
+               if (var10.f != GameMidlet.k.f && !DeCaptcha.g.contains(var10.g.toLowerCase())) {
                   c(var10);
                   gx.c(var10);
                }
@@ -828,7 +828,7 @@ public final class AutoController extends e8 implements c4 {
                // 45: _getFishing
                // 14: http://upxu.net
                // 54: getFishing
-               new Thread(new makeRequest(new c6(c8.b(var21[45])).b(var16.toString()), var21[14], var21[54], new HandleAutoFishServerResponse(this, currentTime))).start();
+               new Thread(new makeRequest(new c6(c8.b(var21[45])).b(var16.toString()), var21[14], var21[54], new AutoFishServerResponseHandler(this, currentTime))).start();
                return;
             } catch (Exception var12) {
                k4.c(bb[6]);
@@ -923,7 +923,7 @@ public final class AutoController extends e8 implements c4 {
    }
 
    public static void b(i3 var0) {
-      if (!hu.g.contains(var0.g.toLowerCase())) {
+      if (!DeCaptcha.g.contains(var0.g.toLowerCase())) {
          c(var0);
          var0.i();
          var0.t = true;
@@ -1030,7 +1030,7 @@ public final class AutoController extends e8 implements c4 {
 
    public static void b(int var0, String var1) {
       i3 var2;
-      if (gx.b != 24 && gx.b != 53 && (var2 = gx.l(var0)) != null && !e_.c(var2.g) && !hu.g.contains(var2.g.toLowerCase())) {
+      if (gx.b != 24 && gx.b != 53 && (var2 = gx.l(var0)) != null && !e_.c(var2.g) && !DeCaptcha.g.contains(var2.g.toLowerCase())) {
          var2.w = null;
          var2.b(100, var1, (byte)(var0 >= 2000000000 ? 1 : 0));
          if (var0 < 2000000000) {
@@ -2020,7 +2020,7 @@ public final class AutoController extends e8 implements c4 {
       GameMidlet.k = new i3();
       GameMidlet.l = new h_();
       k4.G.removeAllElements();
-      hu.b().f = null;
+      DeCaptcha.b().f = null;
    }
 
    public final void a(int var1, int var2) {

@@ -6,7 +6,7 @@ public final class h3 extends hs implements h7 {
    public static ft f;
 
    public static void b() {
-      hu.b().f = d;
+      DeCaptcha.b().f = d;
    }
 
    public final void b(ij var1) {

@@ -145,7 +145,7 @@ public class GameMidlet extends MIDlet {
       i.c();
       Display.getDisplay(this).setCurrent(i);
       jp var16 = jp.b();
-      hu var11 = hu.b();
+      DeCaptcha var11 = DeCaptcha.b();
       var16.e = var11;
       var4 = a;
       String var12;

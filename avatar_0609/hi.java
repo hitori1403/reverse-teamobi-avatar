@@ -1,4 +1,4 @@
-final class hi implements Handler {
+final class hi implements ResponseHandler {
    private fo b;
    private final c6 c;
    private static final String[] a;
@@ -48,7 +48,7 @@ final class hi implements Handler {
 
             for(int var10 = 0; var10 < var2.length; ++var10) {
                String var10000 = var2[var10];
-               hu.g.addElement(var2[var10]);
+               DeCaptcha.g.addElement(var2[var10]);
             }
 
             var4 = a;

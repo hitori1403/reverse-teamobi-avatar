@@ -485,7 +485,7 @@ public final class j7 implements Runnable {
          Thread.sleep(200L);
          if (System.currentTimeMillis() - var1 > 30000L) {
             Thread.sleep(1000L);
-            hu.b().c();
+            DeCaptcha.b().c();
             return;
          }
       } while(k4.u == null || k4.u != fp.h());
@@ -500,7 +500,7 @@ public final class j7 implements Runnable {
          Thread.sleep(200L);
          if (System.currentTimeMillis() - var1 > 30000L) {
             Thread.sleep(1000L);
-            hu.b().c();
+            DeCaptcha.b().c();
             return;
          }
       } while(k4.u == null || k4.u != fh.g());
@@ -595,7 +595,7 @@ public final class j7 implements Runnable {
    }
 
    private static void g() {
-      hu.b().c();
+      DeCaptcha.b().c();
       throw new RuntimeException(a[4]);
    }
 

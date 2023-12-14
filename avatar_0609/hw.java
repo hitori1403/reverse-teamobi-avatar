@@ -4,7 +4,7 @@ public final class hw extends hs implements h7 {
    public static hw d = new hw();
 
    public static void b() {
-      hu.b().f = d;
+      DeCaptcha.b().f = d;
    }
 
    public final void b(ij var1) {
@@ -154,7 +154,7 @@ public final class hw extends hs implements h7 {
                   var40.addElement(var69);
                }
 
-               Vector var64 = hu.c(var1);
+               Vector var64 = DeCaptcha.c(var1);
                hz.b();
                fg var70 = fg.g();
                Vector var57 = var64;
@@ -311,10 +311,10 @@ public final class hw extends hs implements h7 {
                AutoController.b(hz.c(var1));
                return;
             case 76:
-               hu.f(var1);
+               DeCaptcha.f(var1);
                return;
             case 77:
-               hu.g(var1);
+               DeCaptcha.g(var1);
          }
       } catch (Exception var10) {
          var10.printStackTrace();

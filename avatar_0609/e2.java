@@ -45,7 +45,7 @@ public final class e2 extends ex {
 
       String[] var5 = J;
       if (var1.indexOf(var5[0]) != -1) {
-         hu.b().c();
+         DeCaptcha.b().c();
       }
 
       if (!var1.equals(hq.Z) || System.currentTimeMillis() - I >= 3000L) {

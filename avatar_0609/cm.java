@@ -1,7 +1,7 @@
 final class cm implements gq {
    public final void b() {
       GameMidlet.f = 8;
-      hu.b().f = null;
+      DeCaptcha.b().f = null;
       jp.b().d();
       fi.g().d();
       k4.w = null;

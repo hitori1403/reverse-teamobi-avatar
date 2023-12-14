@@ -242,10 +242,10 @@ public final class h5 extends hs implements h7 {
                k4.c(var1.b().readUTF());
                return;
             case 76:
-               hu.f(var1);
+               DeCaptcha.f(var1);
                return;
             case 77:
-               hu.g(var1);
+               DeCaptcha.g(var1);
                return;
             case 78:
                if (b()) {

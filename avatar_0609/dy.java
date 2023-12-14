@@ -1,4 +1,4 @@
-final class dy implements Handler {
+final class dy implements ResponseHandler {
    private cw b;
    private final long c;
    private static final String[] a;

@@ -9,7 +9,7 @@ public final class hz extends hs implements h7 {
          d = new hz();
       }
 
-      hu.b().f = d;
+      DeCaptcha.b().f = d;
    }
 
    // $VF: Could not properly define all variable types!
@@ -51,10 +51,10 @@ public final class hz extends hs implements h7 {
                AutoController.d(var26);
                return;
             case 54:
-               hu.f(var1);
+               DeCaptcha.f(var1);
                return;
             case 55:
-               hu.g(var1);
+               DeCaptcha.g(var1);
                return;
             case 57:
                int var37 = var1.b().readInt();

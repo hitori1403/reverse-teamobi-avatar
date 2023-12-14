@@ -1,8 +1,8 @@
 final class kv extends Thread {
-   private hu b;
+   private DeCaptcha b;
    private static final String a;
 
-   kv(hu var1) {
+   kv(DeCaptcha var1) {
       this.b = var1;
    }
 

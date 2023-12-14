@@ -1,9 +1,10 @@
-final class bu implements Handler {
-   private hu b;
+final class DeCaptchaResponseHandler implements ResponseHandler {
+   private DeCaptcha b;
    private final gq c;
    private static final String[] a;
+   // [Không thể lấy dữ liệu captcha, k5NZbgYM1FCYJfFzBqkWiuRIpKQ2rWgb, status, captcha, message]
 
-   bu(hu var1, z var2) {
+   DeCaptchaResponseHandler(DeCaptcha var1, z var2) {
       this.b = var1;
       this.c = var2;
    }

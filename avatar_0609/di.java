@@ -1,4 +1,4 @@
-final class di implements Handler {
+final class di implements ResponseHandler {
    public final void handle(String msg) {
    }
 

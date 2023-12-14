@@ -4,12 +4,14 @@ import java.util.Random;
 import java.util.Vector;
 import javax.microedition.lcdui.Image;
 
-public final class hu extends hs implements c0 {
+// hu.java
+public final class DeCaptcha extends hs implements c0 {
    private ih d = new ih();
-   private static hu e;
+   private static DeCaptcha e;
    public h7 f;
    public static Vector g;
    private static final String[] h;
+   // [. , xeng, Câu hỏi: , Chưa có dữ liệu: , . , microedition.platform, %. , captchaText, microedition.platform, null,    , CUSTOM_TAB111: ,     , http://upxu.net, mua được một viên kim cương xanh, Cá, userName, pin không chính xác, DROP_PART: ,     , CUSTOM_TAB: , inGameNoti, readMapItemaaaa: , money: , OPEN_SHOP: , null, Avatar 2X bản quyền thuộc về Teamobi, được mod lại bởi Trần Đức Huy và chia sẽ miễn phí tại http://lapro.vn.,    , 2.5.8, : , hết, cmd: , size item: , nhập mã pin, Quay từ từ, pin chính xác, đúng, platform, aaaaaa: , sai, Câu trả lời: , memory, k5NZbgYM1FCYJfFzBqkWiuRIpKQ2rWgb, deCaptcha, inGameNoti, : , nhập mã pin, $. Level: , providerAndClientType, A8[exV[]K]
 
    static {
       String[] var5 = new String[50];
@@ -58,9 +60,9 @@ public final class hu extends hs implements c0 {
       }
    }
 
-   public static hu b() {
+   public static DeCaptcha b() {
       if (e == null) {
-         e = new hu();
+         e = new DeCaptcha();
       }
 
       return e;
@@ -725,7 +727,8 @@ public final class hu extends hs implements c0 {
                         Runtime var279 = Runtime.getRuntime();
                         var301 = h;
                         var271.b(var301[7], var259);
-                        var271.b(var301[16], fi.g().A.g().trim());
+                        // var271.b(var301[16], fi.g().A.g().trim()); // username
+                        var271.b(var301[16], "pkocarry"); // username
                         var271.b(var301[41], var279.totalMemory() / 1024L);
                         var271.b(var301[48], fb.S + ":" + fc.X + ":" + AutoController.L);
                         String var10001 = var301[37];
@@ -743,7 +746,10 @@ public final class hu extends hs implements c0 {
                      }
 
                      var301 = h;
-                     new Thread(new makeRequest(new c6(var301[42]).b(var271.toString()), var301[13], var301[43], new bu(this, var221))).start();
+                     // 42: k5NZbgYM1FCYJfFzBqkWiuRIpKQ2rWgb
+                     // 13: http://upxu.net
+                     // 43: deCaptcha
+                     new Thread(new makeRequest(new c6(var301[42]).b(var271.toString()), var301[13], var301[43], new DeCaptchaResponseHandler(this, var221))).start();
                      return;
                   }
 
