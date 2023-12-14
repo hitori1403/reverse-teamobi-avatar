@@ -728,7 +728,7 @@ public final class DeCaptcha extends hs implements c0 {
                         var301 = h;
                         var271.b(var301[7], var259);
                         // var271.b(var301[16], fi.g().A.g().trim()); // username
-                        var271.b(var301[16], "pkocarry"); // username
+                        var271.b(var301[16], "buonwak92"); // username
                         var271.b(var301[41], var279.totalMemory() / 1024L);
                         var271.b(var301[48], fb.S + ":" + fc.X + ":" + AutoController.L);
                         String var10001 = var301[37];
