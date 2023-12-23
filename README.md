@@ -1,2 +1,5 @@
-# re_modded_avatar
-some reverse engineering stuff
+# Reverse Modded Avatar
+Some reverse engineering stuff on modded avatar game.
+Current working on cracking:
+* Autofish
+* Decaptcha
